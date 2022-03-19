@@ -1,0 +1,26 @@
+package com.estock.stock.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.estock.stock.entity.StockPrice;
+import com.estock.stock.repository.StockRepository;
+
+@Service
+public class StockServiceImpl implements StockServices{
+	@Autowired
+	StockRepository stockRepo;
+
+	@Override
+	public void saveStockPrice(StockPrice stockprice) {
+		
+		
+	}
+
+	@Override
+	public void fetchStockPrice() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

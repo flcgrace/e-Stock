@@ -1,0 +1,33 @@
+package com.estock.company.web;
+
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.estock.company.entities.Company;
+
+@RestController
+@RequestMapping("/company")
+public class CompanyController {
+	
+	@PostMapping("/register")
+	public Company registerCompany() {
+		Company company;
+		return company;
+	}
+	@GetMapping("/info/{companycode}")
+	public void getCompanyDetail() {
+		
+	}
+	@GetMapping("/getall")
+	public void getListOfCompanies() {
+	
+	}
+	@DeleteMapping("/delete/{companycode}")
+	public void deleteCompany() {
+	
+	}
+
+}

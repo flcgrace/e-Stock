@@ -1,0 +1,19 @@
+package com.estock.company.repository;
+
+import java.util.List;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.mongodb.repository.Query;
+import com.estock.company.entities.*;
+
+
+public interface CompanyDao extends MongoRepository<Company, String> {
+
+	@Query("{companyname:'?0'}")
+	Company findItemByName(String companyname);
+	
+	@Query()
+	List<Company> findAll();
+	
+	public long count();
+}

@@ -1,0 +1,20 @@
+package com.estock.company.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class CompanyServices {
+
+	public void fetchAllCompanies() {
+		
+	}
+	public void findCompanyByCompanyCode() {
+		
+	}
+	public void saveCompany() {
+		
+	}
+	public void deleteCompany() {
+		
+	}
+}

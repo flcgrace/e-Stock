@@ -1,0 +1,5 @@
+package com.estock.stock.web;
+
+public class StockController {
+
+}

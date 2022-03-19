@@ -1,0 +1,11 @@
+package com.estock.stock.services;
+
+import java.time.LocalDateTime;
+
+import com.estock.stock.entity.StockPrice;
+
+public interface StockServices {
+	public void saveStockPrice(StockPrice stockPrice);
+	public void fetchStockPrice(String companyCode);
+	public void fetchStockPrice(String companyCode, LocalDateTime start, LocalDateTime end);
+}

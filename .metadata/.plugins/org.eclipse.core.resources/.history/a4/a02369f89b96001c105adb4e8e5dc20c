@@ -1,0 +1,10 @@
+package com.estock.company.services;
+
+
+public interface CompanyServices {
+
+	public void fetchAllCompanies();
+	public void findCompanyByCompanyCode();
+	public void saveCompany();
+	public void deleteCompany();
+}

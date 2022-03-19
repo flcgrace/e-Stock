@@ -1,0 +1,38 @@
+package com.estock.company.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.estock.company.entities.Company;
+import com.estock.company.repository.CompanyDao;
+
+public class CompanyServiceImpl implements CompanyServices {
+	@Autowired
+	private CompanyDao companyDao;
+
+	@Override
+	public List<Company> fetchAllCompanies() {
+		List<Company> companyList= companyDao.findAll();
+		return companyList;
+	}
+
+	@Override
+	public Company findCompanyByCompanyCode(String companyCode) {
+		return companyDao.findCompanyByCode(companyCode)
+		
+	}
+
+	@Override
+	public void saveCompany() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteCompany() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

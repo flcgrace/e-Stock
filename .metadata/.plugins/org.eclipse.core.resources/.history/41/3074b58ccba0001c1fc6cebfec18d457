@@ -1,0 +1,44 @@
+package com.estock.stock.services;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.estock.stock.entity.StockPrice;
+import com.estock.stock.repository.StockRepository;
+
+@Service
+public class StockServiceImpl implements StockServices{
+	@Autowired
+	StockRepository stockRepo;
+
+	@Override
+	public StockPrice saveStockPrice(StockPrice stockPrice) {
+		final String uri = "http://company-service:8081/company/validate/"+stockPrice.getCompanyCode();
+
+	    RestTemplate restTemplate = new RestTemplate();
+	    Boolean result = restTemplate.getForObject(uri, Boolean.class);
+
+	    if(result) {
+	    stockPrice.setDateTime(LocalDateTime.now());
+		return stockRepo.save(stockPrice);
+	    }
+	    return null;
+	}
+
+
+	@Override
+	public List<StockPrice> fetchStockPrice(String companyCode) {
+		return stockRepo.findByCompanyCode(companyCode);
+	}
+
+	@Override
+	public List<StockPrice> fetchStockPrice(String companyCode, LocalDateTime start, LocalDateTime end) {
+		
+		return stockRepo.findByCompanyCodeAndTime(companyCode, start, end);
+	}
+
+}

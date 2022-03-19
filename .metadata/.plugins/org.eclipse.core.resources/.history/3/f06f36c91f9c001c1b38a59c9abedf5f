@@ -1,0 +1,21 @@
+package com.estock.stock.web;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/stock")
+public class StockController {
+
+	@PostMapping("/add/{companycode}")
+	public void addStockPrice() {
+		
+	}
+	@GetMapping("/get/{companycode}/{startdate}/{enddate}")
+	public void getStockPrice() {
+		
+	}
+		
+}

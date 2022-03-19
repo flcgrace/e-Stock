@@ -1,0 +1,8 @@
+package com.estock.company.web;
+
+@RestController
+//@Api( tags = "admin")
+@RequestMapping("/admin")
+public class CompanyController {
+
+}

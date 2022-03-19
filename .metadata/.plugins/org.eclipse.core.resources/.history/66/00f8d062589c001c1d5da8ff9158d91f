@@ -1,0 +1,5 @@
+package com.estock.stock.entity;
+
+public class StockPrice {
+
+}

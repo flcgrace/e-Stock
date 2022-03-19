@@ -1,0 +1,6 @@
+package com.estock.stock.services;
+
+public interface StockServices {
+	public void saveStockPrice();
+	public void fetchStockPrice();
+}

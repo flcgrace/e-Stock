@@ -1,0 +1,54 @@
+package com.estock.stock.entity;
+
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class StockPrice {
+	@Id
+	@GeneratedValue
+	private int id;
+	private String companyCode;
+	private double price;
+	private LocalDateTime stockDateTime;
+	public StockPrice() {
+		
+	}
+	public StockPrice(int id, String companyCode, double price, LocalDateTime dateTime) {
+		super();
+		this.id = id;
+		this.companyCode = companyCode;
+		this.price = price;
+		this.stockDateTime = dateTime;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getCompanyCode() {
+		return companyCode;
+	}
+	public void setCompanyCode(String companyCode) {
+		this.companyCode = companyCode;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	public LocalDateTime getDateTime() {
+		return stockDateTime;
+	}
+	public void setDateTime(LocalDateTime dateTime) {
+		this.stockDateTime = dateTime;
+	}
+	
+
+}

@@ -1,0 +1,6 @@
+package com.estock.stock.repository;
+
+@Repository
+public class StockRepository extends JpaRepository<StockPrice, String> {
+
+}

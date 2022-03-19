@@ -1,0 +1,5 @@
+package com.estock.company.web;
+
+public class CompanyController {
+
+}

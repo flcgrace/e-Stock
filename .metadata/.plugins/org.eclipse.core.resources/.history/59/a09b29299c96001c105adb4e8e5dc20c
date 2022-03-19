@@ -1,0 +1,5 @@
+package com.estock.company.services;
+
+public class CompanyServiceImpl {
+
+}

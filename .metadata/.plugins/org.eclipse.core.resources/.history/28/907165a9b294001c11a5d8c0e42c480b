@@ -1,0 +1,16 @@
+server.port=9091
+
+spring.application.name=zuul-api-gateway
+
+eureka.client.serviceUrl.defaultZone= http://localhost:9090/eureka/
+
+#zuul.routes.flight.path=/v1/api/**
+#zuul.routes.flight.url=FLIGHT-SERVICE
+
+#zuul.routes.admin.path=/v2/api/**
+#zuul.routes.admin.url=ADMIN-SERVICE
+
+#zuul.routes.user.path=/v2/api/**
+#zuul.routes.user.url=USER-SERVICE
+
+ribbon.readTimeout=60000

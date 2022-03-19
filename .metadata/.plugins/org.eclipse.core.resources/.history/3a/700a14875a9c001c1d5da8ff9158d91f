@@ -1,0 +1,20 @@
+package com.estock.stock.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class StockServiceImpl implements StockServices{
+
+	@Override
+	public void saveStockPrice() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void fetchStockPrice() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

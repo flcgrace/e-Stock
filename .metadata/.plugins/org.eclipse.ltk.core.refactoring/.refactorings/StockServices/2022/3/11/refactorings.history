@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;dateTime&apos; in &apos;com.estock.stock.entity.StockPrice&apos; to &apos;stockDateTime&apos;&#x0D;&#x0A;- Original project: &apos;StockServices&apos;&#x0D;&#x0A;- Original element: &apos;com.estock.stock.entity.StockPrice.dateTime&apos;&#x0D;&#x0A;- Renamed element: &apos;com.estock.stock.entity.StockPrice.stockDateTime&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;dateTime&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src\/main\/java&lt;com.estock.stock.entity{StockPrice.java[StockPrice^dateTime" name="stockDateTime" references="true" setter="false" stamp="1646956708100" textual="false" version="1.0"/>
+</session>

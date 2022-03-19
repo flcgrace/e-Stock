@@ -1,0 +1,13 @@
+package com.estock.stock.entity;
+
+import javax.annotation.Generated;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class StockPrice {
+	@Id
+	@Generated
+	private String id;
+
+}
