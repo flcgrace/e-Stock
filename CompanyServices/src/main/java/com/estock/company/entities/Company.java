@@ -11,11 +11,11 @@ import org.springframework.validation.annotation.Validated;
 
 @Document("Company")
 @Validated
-public class Company {
+public class Company {	
 	@Id
 	@GeneratedValue
     private String id;
-	@Indexed(unique = true, background = true)
+	@Indexed(name = "company_code_uniq",unique = true)
 	@NotNull(message = "Company Code cannot be empty")
 	private String companyCode;
 	@NotNull(message = "Company Name cannot be empty")
@@ -29,6 +29,7 @@ public class Company {
     private int companyTurnover;
 	@NotNull(message = "Company Stock Exchange cannot be empty")
     private String stockExchange;
+	public Company() {};
 	public Company(String id, String companyCode, String companyName, String companyCEO, String companyWebsite,
 			int companyTurnover, String stockExchange) {
 		super();
